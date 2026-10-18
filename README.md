@@ -153,6 +153,10 @@ deepseek-search-ext/
 | 网络请求失败 | 断网或代理拦截；若服务端拒绝扩展来源，需要一个极薄的中转（Cloudflare Worker 即可） |
 | Firefox 装不上 xpi | 没签名，走上面的签名流程 |
 
+## 隐私
+
+见 [PRIVACY.md](PRIVACY.md)。
+
 ## 许可证
 
 [PolyForm Noncommercial 1.0.0](LICENSE.md) —— 源码公开，可以阅读、修改、分发，
