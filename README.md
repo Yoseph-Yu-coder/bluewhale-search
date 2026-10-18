@@ -1,6 +1,9 @@
 # 蓝鲸搜索 · 新标签页
 
 一个替代新标签页的搜索起始页：中间是大时钟和一枚胶囊搜索框，右上角一颗齿轮，点开是设置。
+
+![蓝鲸搜索 · 搜索结果页](promo/out/screenshots/02-results.png)
+
 搜索走后端是 DeepSeek 官方的 Search / Fetch 接口，一套源码同时打 Chrome 和 Firefox 两个包。
 
 ## 界面
