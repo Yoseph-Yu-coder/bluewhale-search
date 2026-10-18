@@ -1,0 +1,50 @@
+{
+  "manifest_version": 3,
+  "name": "蓝鲸搜索",
+  "version": "1.3.1",
+  "description": "简洁的新标签页：用 DeepSeek 搜索 API 搜网页、读正文、复制引用。",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "96": "icons/icon96.png",
+    "128": "icons/icon128.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "bluewhale-search@local.dev",
+      "strict_min_version": "115.0",
+      "data_collection_permissions": {
+        "required": ["authenticationInfo", "searchTerms", "browsingActivity"]
+      }
+    }
+  },
+  "action": {
+    "default_title": "打开蓝鲸搜索",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "chrome_url_overrides": {
+    "newtab": "start.html"
+  },
+  "permissions": ["storage", "clipboardWrite"],
+  "host_permissions": ["https://api.deepseek.com/*"],
+  "omnibox": {
+    "keyword": "ds"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+L"
+      },
+      "description": "打开蓝鲸搜索"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+# 构建产物
+dist/
+web-ext-artifacts/
+node_modules/
+.pylibs/
+
+# 渲染中间件，随时可重新生成（promo/build 有几百 MB 的 PNG 序列）
+promo/build/
+
+# 系统文件
+*.log
+.DS_Store
+Thumbs.db

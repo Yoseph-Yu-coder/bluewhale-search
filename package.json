@@ -1,0 +1,15 @@
+{
+  "name": "deepseek-search-ext",
+  "version": "1.3.1",
+  "private": true,
+  "description": "DeepSeek 搜索新标签页（Chrome / Firefox）",
+  "scripts": {
+    "build": "pwsh -File build.ps1",
+    "lint": "web-ext lint --source-dir dist/firefox",
+    "start:firefox": "web-ext run --source-dir dist/firefox",
+    "sign": "web-ext sign --source-dir dist/firefox --artifacts-dir dist/signed --channel unlisted --overwrite-dest"
+  },
+  "devDependencies": {
+    "web-ext": "^8.3.0"
+  }
+}
